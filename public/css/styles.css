@@ -334,3 +334,37 @@ header .logo-text .header-text {
 .home .main-container {
     margin-top: 20px;
 }
+/* Agrega estos estilos al final de tu archivo CSS */
+
+.home .employees-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .employee {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: var(--tran-05);
+  }
+  
+  .employee h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .employee-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Ajusta estos estilos según tu preferencia */
+  .status, .startTime, .elapsedTime {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  

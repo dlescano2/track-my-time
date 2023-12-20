@@ -1,0 +1,20 @@
+{
+  "name": "track-my-time",
+  "version": "1.0.0",
+  "description": "Desarrollo de una web para control horario de empleados.",
+  "main": "back/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon back/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mariadb": "^3.2.2",
+    "moment-timezone": "^0.5.43",
+    "socket.io": "^4.7.2"
+  }
+}

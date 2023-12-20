@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9853532c8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <title>Mi panel - Track My Time</title>
+  </head>
+
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="logo-text">
+          <span class="logo-title">
+            <h1>TMT</h1>
+          </span>
+          <div class="text header-text">
+            <span class="name">Track My Time</span>
+            <span class="subname">Control horario</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <input type="search" placeholder="Buscar..." />
+          </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="panel.html">
+                <i class="fa-regular fa-clipboard icon"></i>
+                <span class="text nav-text">Mi Panel</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+              <span class="text nav-text">Cerrar sesión</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Agrega esta plantilla dentro de tu cuerpo HTML -->
+    <template id="employee-template">
+      <div class="employee">
+        <h2 class="employee-name"></h2>
+        <div class="employee-info">
+          <div class="status">Estado: Desconocido</div>
+          <div class="startTime">Inicio: 00:00:00</div>
+          <div class="elapsedTime">Tiempo: 00:00</div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Modifica la sección home para incluir el contenedor de empleados -->
+    <section class="home">
+      <div class="main-container">
+        <h1 class="text">Mi Panel</h1>
+
+        <!-- Agrega un contenedor para los empleados -->
+        <div class="employees-container"></div>
+      </div>
+    </section>
+
+    <!-- Agrega esta línea para incluir la biblioteca socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/webhooks.js"></script>
+    <script src="/javascript/cronometro.js"></script>
+    <script src="/javascript/main.js"></script>
+  </body>
+</html>
